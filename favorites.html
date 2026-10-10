@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Favorites | RealEstateHub</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            <i class="fa-solid fa-building"></i>
+            RealEstate<span>Hub</span>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="properties.html">Properties</a>
+            <a href="agents.html">Agents</a>
+            <a href="favorites.html" class="active">
+                Favorites
+            </a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+
+            <a href="#" class="login-btn">
+                <i class="fa-regular fa-user"></i>
+                Login
+            </a>
+
+            <a href="#" class="add-property-btn">
+                <i class="fa-solid fa-plus"></i>
+                Add Property
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= PAGE HEADER ================= -->
+
+    <section class="page-header">
+
+        <div class="page-header-content">
+
+            <span class="section-label">
+                SAVED PROPERTIES
+            </span>
+
+            <h1>Your Favorite Properties</h1>
+
+            <p>
+                Keep track of the properties you're interested in.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FAVORITES ================= -->
+
+    <main class="favorites-page">
+
+        <div class="favorites-header">
+
+            <div>
+                <h2>My Favorites</h2>
+
+                <p>
+                    <span id="favoriteCount">0</span>
+                    properties saved
+                </p>
+            </div>
+
+            <a href="properties.html" class="browse-btn">
+                <i class="fa-solid fa-house"></i>
+                Browse Properties
+            </a>
+
+        </div>
+
+
+        <!-- PROPERTY GRID -->
+
+        <div
+            class="properties-grid"
+            id="favoritesGrid"
+        ></div>
+
+
+        <!-- EMPTY STATE -->
+
+        <div
+            class="empty-favorites"
+            id="emptyFavorites"
+            style="display: none;"
+        >
+
+            <div class="empty-icon">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+
+            <h2>No Favorites Yet</h2>
+
+            <p>
+                You haven't saved any properties yet.
+                Browse our properties and save the ones you like.
+            </p>
+
+            <a href="properties.html" class="browse-btn">
+                <i class="fa-solid fa-house"></i>
+                Explore Properties
+            </a>
+
+        </div>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <div class="footer-brand">
+
+                <h3>
+                    <i class="fa-solid fa-building"></i>
+                    RealEstate<span>Hub</span>
+                </h3>
+
+                <p>
+                    Find your perfect property with confidence.
+                </p>
+
+            </div>
+
+            <div class="footer-links">
+
+                <a href="index.html">Home</a>
+                <a href="properties.html">Properties</a>
+                <a href="agents.html">Agents</a>
+                <a href="contact.html">Contact</a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            © 2026 RealEstateHub. All rights reserved.
+        </div>
+
+    </footer>
+
+
+    <script src="js/favorites.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Properties | RealEstateHub</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="nav-container">
+
+            <a href="index.html" class="logo">
+                <span class="logo-icon">
+                    <i class="fa-solid fa-house"></i>
+                </span>
+                RealEstate<span>Hub</span>
+            </a>
+
+            <nav class="nav-menu">
+
+                <a href="index.html">Home</a>
+
+                <a href="properties.html" class="active">
+                    Properties
+                </a>
+
+                <a href="agents.html">
+                    Agents
+                </a>
+
+                <a href="favorites.html">
+                    <i class="fa-regular fa-heart"></i>
+                    Favorites
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </nav>
+
+            <div class="nav-actions">
+
+                <a href="#" class="login-btn">
+                    <i class="fa-regular fa-user"></i>
+                    Login
+                </a>
+
+                <a href="#" class="add-property-btn">
+                    + Add Property
+                </a>
+
+            </div>
+
+            <button class="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= PAGE HEADER ================= -->
+
+    <section class="properties-header">
+
+        <div>
+
+            <p class="section-label">
+                EXPLORE
+            </p>
+
+            <h1>Find Your Perfect Property</h1>
+
+            <p>
+                Browse apartments, villas, houses and plots
+                from trusted listings.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PROPERTIES ================= -->
+
+    <main class="properties-page">
+
+        <!-- FILTER SIDEBAR -->
+
+        <aside class="filter-box">
+
+            <div class="filter-title">
+
+                <h3>
+                    <i class="fa-solid fa-sliders"></i>
+                    Filters
+                </h3>
+
+                <button id="clearFilters">
+                    Clear All
+                </button>
+
+            </div>
+
+
+            <!-- LOCATION -->
+
+            <div class="filter-group">
+
+                <label>Location</label>
+
+                <select id="locationFilter">
+
+                    <option value="all">
+                        All Locations
+                    </option>
+
+                    <option value="Visakhapatnam">
+                        Visakhapatnam
+                    </option>
+
+                    <option value="Hyderabad">
+                        Hyderabad
+                    </option>
+
+                    <option value="Vijayawada">
+                        Vijayawada
+                    </option>
+
+                    <option value="Bengaluru">
+                        Bengaluru
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- PROPERTY TYPE -->
+
+            <div class="filter-group">
+
+                <label>Property Type</label>
+
+                <select id="typeFilter">
+
+                    <option value="all">
+                        All Types
+                    </option>
+
+                    <option value="Apartment">
+                        Apartment
+                    </option>
+
+                    <option value="Villa">
+                        Villa
+                    </option>
+
+                    <option value="House">
+                        House
+                    </option>
+
+                    <option value="Plot">
+                        Plot
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- PRICE -->
+
+            <div class="filter-group">
+
+                <label>Price Range</label>
+
+                <div class="price-inputs">
+
+                    <input
+                        type="number"
+                        id="minPrice"
+                        placeholder="Min ₹">
+
+                    <input
+                        type="number"
+                        id="maxPrice"
+                        placeholder="Max ₹">
+
+                </div>
+
+            </div>
+
+
+            <!-- BEDROOMS -->
+
+            <div class="filter-group">
+
+                <label>Bedrooms</label>
+
+                <select id="bedroomFilter">
+
+                    <option value="all">
+                        Any Bedrooms
+                    </option>
+
+                    <option value="1">1+</option>
+                    <option value="2">2+</option>
+                    <option value="3">3+</option>
+                    <option value="4">4+</option>
+
+                </select>
+
+            </div>
+
+
+            <button
+                class="apply-filter-btn"
+                id="applyFilters">
+
+                Apply Filters
+
+            </button>
+
+        </aside>
+
+
+        <!-- PROPERTY CONTENT -->
+
+        <section class="property-results">
+
+            <div class="results-top">
+
+                <div>
+                    <p class="results-count">
+                        Showing
+                        <strong id="propertyCount">0</strong>
+                        properties
+                    </p>
+                </div>
+
+                <select id="sortProperties">
+
+                    <option value="default">
+                        Sort By
+                    </option>
+
+                    <option value="low">
+                        Price: Low to High
+                    </option>
+
+                    <option value="high">
+                        Price: High to Low
+                    </option>
+
+                    <option value="area">
+                        Area: Large to Small
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- PROPERTY GRID -->
+
+            <div
+                class="property-grid"
+                id="propertyGrid">
+
+            </div>
+
+
+            <!-- NO RESULTS -->
+
+            <div
+                class="no-results"
+                id="noResults">
+
+                <i class="fa-solid fa-house-circle-xmark"></i>
+
+                <h3>
+                    No Properties Found
+                </h3>
+
+                <p>
+                    Try changing your filters.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+
+                <a href="index.html" class="logo footer-logo">
+
+                    <span class="logo-icon">
+                        <i class="fa-solid fa-house"></i>
+                    </span>
+
+                    RealEstate<span>Hub</span>
+
+                </a>
+
+                <p>
+                    Helping you discover properties
+                    that feel like home.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Explore</h4>
+
+                <a href="index.html">Home</a>
+                <a href="properties.html">Properties</a>
+                <a href="agents.html">Agents</a>
+                <a href="favorites.html">Favorites</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Property Types</h4>
+
+                <a href="#">Apartments</a>
+                <a href="#">Villas</a>
+                <a href="#">Houses</a>
+                <a href="#">Plots</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Contact</h4>
+
+                <p>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Visakhapatnam, AP
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                    +91 98765 43210
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 RealEstateHub. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="js/properties.js"></script>
+
+</body>
+
+</html>

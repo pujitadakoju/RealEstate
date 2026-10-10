@@ -1,0 +1,533 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Property Details | RealEstateHub</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+
+        <div class="nav-container">
+
+            <a href="index.html" class="logo">
+
+                <span class="logo-icon">
+                    <i class="fa-solid fa-house"></i>
+                </span>
+
+                RealEstate<span>Hub</span>
+
+            </a>
+
+            <nav class="nav-menu">
+
+                <a href="index.html">Home</a>
+
+                <a href="properties.html">Properties</a>
+
+                <a href="agents.html">Agents</a>
+
+                <a href="favorites.html">
+                    <i class="fa-regular fa-heart"></i>
+                    Favorites
+                </a>
+
+                <a href="contact.html">Contact</a>
+
+            </nav>
+
+            <div class="nav-actions">
+
+                <a href="#" class="login-btn">
+                    <i class="fa-regular fa-user"></i>
+                    Login
+                </a>
+
+                <a href="#" class="add-property-btn">
+                    + Add Property
+                </a>
+
+            </div>
+
+            <button class="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- PROPERTY DETAILS -->
+
+    <main class="details-page">
+
+        <!-- BACK -->
+
+        <a href="properties.html" class="back-link">
+
+            <i class="fa-solid fa-arrow-left"></i>
+
+            Back to Properties
+
+        </a>
+
+
+        <!-- IMAGE GALLERY -->
+
+        <section class="details-gallery">
+
+            <div class="main-property-image">
+
+                <img id="mainImage" src="" alt="Property">
+
+                <span id="propertyStatus" class="details-status">
+                    FOR SALE
+                </span>
+
+                <button
+                    class="details-favorite"
+                    id="favoriteButton">
+
+                    <i class="fa-regular fa-heart"></i>
+
+                </button>
+
+            </div>
+
+
+            <div class="thumbnail-container" id="thumbnails">
+
+                <!-- JS -->
+
+            </div>
+
+        </section>
+
+
+        <!-- PROPERTY CONTENT -->
+
+        <section class="details-layout">
+
+
+            <!-- LEFT CONTENT -->
+
+            <div class="details-main">
+
+                <div class="details-heading">
+
+                    <div>
+
+                        <p
+                            class="property-type"
+                            id="propertyType">
+                        </p>
+
+                        <h1 id="propertyTitle">
+                            Loading...
+                        </h1>
+
+                        <p class="details-location">
+
+                            <i class="fa-solid fa-location-dot"></i>
+
+                            <span id="propertyLocation"></span>
+
+                        </p>
+
+                    </div>
+
+                    <div class="details-price">
+
+                        <span>Price</span>
+
+                        <strong id="propertyPrice">
+                            ₹0
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FEATURES -->
+
+                <div class="details-features">
+
+                    <div>
+
+                        <i class="fa-solid fa-bed"></i>
+
+                        <span>
+                            Bedrooms
+                        </span>
+
+                        <strong id="propertyBedrooms">
+                            -
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <i class="fa-solid fa-bath"></i>
+
+                        <span>
+                            Bathrooms
+                        </span>
+
+                        <strong id="propertyBathrooms">
+                            -
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <i class="fa-solid fa-ruler-combined"></i>
+
+                        <span>
+                            Area
+                        </span>
+
+                        <strong id="propertyArea">
+                            -
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <i class="fa-solid fa-building"></i>
+
+                        <span>
+                            Type
+                        </span>
+
+                        <strong id="propertyType2">
+                            -
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <!-- DESCRIPTION -->
+
+                <div class="details-section">
+
+                    <h2>
+                        About This Property
+                    </h2>
+
+                    <p id="propertyDescription">
+                        Loading property description...
+                    </p>
+
+                </div>
+
+
+                <!-- AMENITIES -->
+
+                <div class="details-section">
+
+                    <h2>
+                        Amenities
+                    </h2>
+
+                    <div class="amenities-grid">
+
+                        <div>
+                            <i class="fa-solid fa-square-parking"></i>
+                            Parking
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-wifi"></i>
+                            Wi-Fi
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-shield-halved"></i>
+                            Security
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-dumbbell"></i>
+                            Gym
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-person-swimming"></i>
+                            Swimming Pool
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-elevator"></i>
+                            Elevator
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- LOCATION -->
+
+                <div class="details-section">
+
+                    <h2>
+                        Property Location
+                    </h2>
+
+                    <div class="map-placeholder">
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        <span id="mapLocation">
+                            Property Location
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT SIDEBAR -->
+
+            <aside class="details-sidebar">
+
+
+                <!-- AGENT -->
+
+                <div class="agent-card">
+
+                    <p class="sidebar-label">
+                        LISTED BY
+                    </p>
+
+                    <div class="agent-profile">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=300&q=80"
+                            alt="Agent">
+
+                        <div>
+
+                            <h3>
+                                Rahul Sharma
+                            </h3>
+
+                            <p>
+                                Property Consultant
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="agent-contact">
+
+                        <p>
+                            <i class="fa-solid fa-phone"></i>
+                            +91 98765 43210
+                        </p>
+
+                        <p>
+                            <i class="fa-solid fa-envelope"></i>
+                            rahul@realestatehub.com
+                        </p>
+
+                    </div>
+
+
+                    <a href="contact.html" class="contact-agent-btn">
+
+                        <i class="fa-regular fa-envelope"></i>
+
+                        Contact Agent
+
+                    </a>
+
+
+                    <a
+                        href="https://wa.me/919876543210"
+                        target="_blank"
+                        class="whatsapp-btn">
+
+                        <i class="fa-brands fa-whatsapp"></i>
+
+                        WhatsApp
+
+                    </a>
+
+                </div>
+
+
+                <!-- ENQUIRY -->
+
+                <div class="enquiry-card">
+
+                    <h3>
+                        Interested in this property?
+                    </h3>
+
+                    <p>
+                        Send an enquiry and our agent
+                        will get back to you.
+                    </p>
+
+                    <form id="enquiryForm">
+
+                        <input
+                            type="text"
+                            id="enquiryName"
+                            placeholder="Your Name"
+                            required>
+
+                        <input
+                            type="tel"
+                            id="enquiryPhone"
+                            placeholder="Phone Number"
+                            required>
+
+                        <input
+                            type="email"
+                            id="enquiryEmail"
+                            placeholder="Email Address"
+                            required>
+
+                        <textarea
+                            id="enquiryMessage"
+                            rows="4"
+                            placeholder="I'm interested in this property..."
+                            required></textarea>
+
+                        <button type="submit">
+                            Send Enquiry
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </aside>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+
+                <a href="index.html" class="logo footer-logo">
+
+                    <span class="logo-icon">
+                        <i class="fa-solid fa-house"></i>
+                    </span>
+
+                    RealEstate<span>Hub</span>
+
+                </a>
+
+                <p>
+                    Helping you discover properties
+                    that feel like home.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Explore</h4>
+
+                <a href="index.html">Home</a>
+                <a href="properties.html">Properties</a>
+                <a href="agents.html">Agents</a>
+                <a href="favorites.html">Favorites</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Property Types</h4>
+
+                <a href="#">Apartments</a>
+                <a href="#">Villas</a>
+                <a href="#">Houses</a>
+                <a href="#">Plots</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Contact</h4>
+
+                <p>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Visakhapatnam, AP
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                    +91 98765 43210
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 RealEstateHub. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="js/property-details.js"></script>
+
+</body>
+
+</html>
